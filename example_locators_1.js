@@ -26,12 +26,12 @@ import puppeteer, { LocatorEvent } from 'puppeteer-core';
         .locator('::-p-text(Get Started)')
         .on(LocatorEvent.Action, () => {
             // Take a screenshot before clicking
-            page.screenshot({ path: "before_click.png" });
+            page.screenshot({ path: "logs/before_click.png" });
         })
         .click();
 
     // Take a screenshot after clicking
-    await page.screenshot({ path: "after_click.png" });
+    await page.screenshot({ path: "logs/after_click.png" });
 
     // Close the browser
     await browser.close();

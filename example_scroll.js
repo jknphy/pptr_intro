@@ -19,7 +19,7 @@ import puppeteer from 'puppeteer-core';
     await page.mouse.wheel({ deltaY: 1000 });
 
     // Take a screenshot
-    await page.screenshot({ path: "mouse1.png" });
+    await page.screenshot({ path: "logs/mouse1.png" });
 
     // Small delay to see it in headful mode
     await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -28,7 +28,7 @@ import puppeteer from 'puppeteer-core';
     await page.mouse.wheel({ deltaY: 1000, });
 
     // Take a screenshot
-    await page.screenshot({ path: "mouse2.png" });
+    await page.screenshot({ path: "logs/mouse2.png" });
 
     // Small delay to see it in headful mode
     await new Promise((resolve) => setTimeout(resolve, 1000));

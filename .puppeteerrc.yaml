@@ -1,0 +1,3 @@
+puppeteer:
+  launchOptions:
+    executablePath: /usr/bin/chromium
